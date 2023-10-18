@@ -11,15 +11,15 @@ const config = {
   favicon: 'img/obsidian-desci-logo.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://github.com/Obsidian-Desci/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'polus-arcticus', // Usually your GitHub org/user name.
-  projectName: 'obsidian-desci-landing', // Usually your repo name.
+  organizationName: 'Obsidian-Desci', // Usually your GitHub org/user name.
+  projectName: 'Docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
