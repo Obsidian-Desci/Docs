@@ -8,34 +8,31 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Obsidian-Desci plugs in web3 and desci project integration behind the scenes in obsidian.md, abstracting away the complexities of blockchain, p2p, and desci.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Collaborate and be Rewarded',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Your data has value, Desci Obsidian offers an avenue of tools to help you be compensated for creation, verfication and connection of it. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by Mimisbrunnr',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Mimisbrunnr in an ERC20 token that wraps a collection of LP tokens from the desci ecosystem.  Fees from this protocol owned liquidity are used to fund the development of Obsidian-Desci and can be unwraped at any time.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
