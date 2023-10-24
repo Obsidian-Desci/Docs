@@ -70,7 +70,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'docs',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -103,6 +103,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/Obsidian_Desci',
               },
+              {
+                label: 'Youtube',
+                href: 'https://www.youtube.com/channel/UCXQhzvHrvzJ8IDwniZTm3OA'
+              }
             ],
           },
           {
