@@ -21,3 +21,6 @@ sidebar_position: 1
 
 ## Nanopub
 [Nanopubs](https://nanopub.net/) are bytesized machine readable research snippets that function as micropublications
+
+## Hypercerts
+[Hypercerts](https://hypercerts.org/) are a p2p way of crediting collaborators work on projects

@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/Quick%20Start">
             Obsidian-Desci Tutorial - 5min ⏱
           </Link>
         </div>

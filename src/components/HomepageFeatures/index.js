@@ -5,28 +5,28 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/obsidian-desci-gift.png').default,
     description: (
       <>
-        Obsidian-Desci plugs in web3 and desci project integration behind the scenes in obsidian.md, abstracting away the complexities of blockchain, p2p, and desci.
+        Obsidian-Desci plugs in web3 and desci projects behind the scenes in obsidian.md, abstracting away their complexities whilst creating a nocode composition environment.
       </>
     ),
   },
   {
     title: 'Collaborate and be Rewarded',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/obsidian-desci-trophy.png').default,
     description: (
       <>
-        Your data has value, Desci Obsidian offers an avenue of tools to help you be compensated for creation, verfication and connection of it. 
+        Your data has value, Obsidian-Desci strives to become a place not only to consume LLMs together, but to be be compensated for your contributions as well
       </>
     ),
   },
   {
     title: 'Powered by Mimisbrunnr',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/obsidian-desci-coin.png').default,
     description: (
       <>
-        Mimisbrunnr in an ERC20 token that wraps a collection of LP tokens from the desci ecosystem.  Fees from this protocol owned liquidity are used to fund the development of Obsidian-Desci and can be unwraped at any time.
+        Stake in range Uniswap V3 LP of popular desci projects, receive Mimisbrunnr in return.
       </>
     ),
   },
@@ -36,7 +36,7 @@ function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Svg} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
