@@ -3,3 +3,30 @@ sidebar_position: 4
 ---
 
 # Lilypad
+[Lilypad](https://lilypad.tech/) Is an edge computation network that allows users to execute jobs by calling smart contracts.      
+
+🚿 - [Faucet](http://testnet.lilypadnetwork.org/) Get Test Lilypad Ether here
+
+RPC Parameters if you'd like to add to your wallet
+```
+name: Lilypad Lalechuza testnet
+rpcUrl: http://testnet.lilypadnetwork.org:8545
+chainId: 1337
+currencySymbol: lil ETH
+```
+:::caution
+Running this command consumes Test Lilypad, it is currently free to get from their faucet, but in the future such tokens could be valuable.  When it does we'll add fat finger protections
+:::
+
+## Command Reference
+
+| Command | Args | Output | Kubo Required | Ethereum Address Required |
+| ------- | ---- | ------ | --------------- | ------- |
+| `runSDXL` | prompt | Canvas Node | false* (but needed to grab outputs) | true |
+| `runCowsay` | prompt | Canvas Node | false* (but needed to grab outputs) | true |
+
+<iframe width="100%" height="560" src="https://www.youtube.com/embed/Wbt8RM_4V6Y?si=fp4SXdVG05brBej3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
+
+:::tip
+Ensure to have Kubo running in the background and add your address private key in the settings tab.
+:::
