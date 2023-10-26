@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/',
+                to: '/docs/Quick%20Start',
               },
             ],
           },
