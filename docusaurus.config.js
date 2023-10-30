@@ -66,6 +66,14 @@ const config = {
           src: 'img/obsidian-desci-logo.png',
         },
         items: [
+          /*
+          {
+            type: 'custom-connectWallet', 
+            position: "right",
+            itemProp: 44, 
+            anotherProp: "xyz"
+          },
+          */
           {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',

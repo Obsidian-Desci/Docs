@@ -2,9 +2,16 @@
 sidebar_position: 2
 ---
 
-# Tokenomics
+# How It Works
 
-WIP
+
+
+If one chooses to offer liquidity in the full range on uniswap v3, the algorithm is identical to constant products in uniswap v2, that is to say
+$ L = x y $
+Tokens in Mimisbrunnr map 1:1 with the liquidity paramater in a Uniswap V3 Pool and only accepts unconcentrated liquidity positions.  Since Mimisbrunnr only accepts WETH denominated pairs, one is ensured the market rate of each token is accepted. Lesser value tokens will undoubtedly create a larger Magnitude of L.  However, since the protocol tracks the weighted average of a liquidity provided by each pool, more of these tokens will be provided back to the user if they choose to unwrap mims.
+
+$$ liquidity Returned = amount * \frac{pool_i}{\sum_{i=0}^{i=#pools}} $$
+
 
 
 ## Supported Tokens
