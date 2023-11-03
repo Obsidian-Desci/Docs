@@ -6,18 +6,24 @@ sidebar_position: 1
 :::danger
 Mimisbrunnr is currently in Alpha! please do not use large amounts and please dont get sad if you lose anything you deposit 
 :::
-[Etherscan](https://etherscan.io/address/0x8c117c89225baa3d2be118892aafae0f89fb9f6f)
+- 🔎  [Etherscan](https://etherscan.io/address/0x8c117c89225baa3d2be118892aafae0f89fb9f6f)
 
-The word [Mimisbrunnr](https://en.wikipedia.org/wiki/M%C3%ADmisbrunnr) means [Mimir's](https://en.wikipedia.org/wiki/M%C3%ADmir) well! Mimirs knowledge nourishes the world tree [Yddrasil](https://en.wikipedia.org/wiki/Yggdrasil).  It is used here to make a metaphor with the pooling of knowledge symbolized by various decentralized science projects that managed to tokenize their offerings. "Mims" start with a 0 initial supply and is minted when a desci token/weth uniswap v3 token LP is sold to the protocol.  Mimisbrunnr merges the liquidity into its own positions and keeps tally.  a user who owns mims can use them as a normal erc20, or unwrap them.  When the unwrap function is called Mimisbrunnr the smart contract sells a weighted proportion of liquidity in each pool and sends these tokens back to the user and burns those mims
+- 🌐  [mimisbrunnr.science](https://mimisbrunnr.science)
+
+<p align="center"><i> High details that Yggdrasil has three roots. One of these roots reaches to where the primordial space of Ginnungagap once existed and where now the frost jötnar live. High explains that, <b>beneath this root is <a href="https://en.wikipedia.org/wiki/M%C3%ADmisbrunnr" target="_blank">Mímisbrunnr</a> and that the well contains "wisdom and intelligence" and "the master of the well is called Mimir. He is full of learning because he drinks of the well from the horn Giallarhorn</b>. All-father went there and asked for a single drink from the well, but he did not get one until he placed his eye as a pledge.</i></p> 
+
+<p align="center"><img width="66%" align="center" src="../../img/QmbwwgWu7tk2phurK4zUUEYcrYi8JNrPFgnYWaDryyr4AH.jpg" /></p>
+  
+  Many [Decentralized Science](https://ethereum.org/en/desci/) projects hoist ERC20 tokens on mainnet to tokenize their offerings. Here we pool together their Uniswap V3 Liquidity WETH pairs into Mimisbrunnr, an ERC20 that mints in exchange for LP.  Users can than unwrap these tokens in exchange for these tokens.  Fees earned by this protocol fund Desci Obsidian operations, and in the near future can be aquired by staking Mimis/WETH in its own Uniswap v3 pool.
+
 ## How does it fund Obsidian-Desci
 
-Then a mim is unwrapped, it decreases the liquidity positions owned by the smart contract, this releases funds to be collected.  However, when the collect function is called, it has not only the funds released, but also the liquidity rewards, the user gets the released funds, but obsidian desci keeps the lp rewards.
+Then a mim is unwrapped, it decreases the liquidity positions owned by the smart contract, this releases funds to be collected.  However, when the collect function is called, it has not only the funds released, but also the liquidity rewards, the user gets the released funds, but obsidian desci keeps the lp rewards. When there is enough cash flow to fund operations, the surplus is divided amongst stakers of Mimis/WETH using the Uniswap V3 Staker contract
 
-## Why Should I hold Mims
+## Why Should I hold Mimis
 
-Mimisbrunnr is a way to attain broad asset exposure to the desci ecosystem by just holding a single asset.  Most desci tokens are small cap so its a way to hedge risk.
+Mimisbrunnr is a way to attain broad asset exposure to the desci ecosystem by just holding a single asset.  Most desci tokens are small cap so its a way to hedge risk. As Mimis proliferates in the ecosystem and aquires more tokens, it may have utility for other usecases (looking at you edge compute!)
 
-## Why Should I not hold Mims
 
-because each Mim is a liquidity point, and the protocol counts LP rewards as profit.  The protocol is exposed to impermanent loss on all pairs,  you get security at the cost of making your impermanent loss permanent.  As the protocol grows and covers its expenses, it will find a way to reduce the amount of permanent loss taken by users.  theories include reinvesting excess liquidity rewards back into the respective pools and creating a version of the V3Staker contract that snapshots the block timestamp and the pool parameters to accurately reward users with those lp rewards.
+
  
