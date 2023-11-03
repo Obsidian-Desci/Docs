@@ -3,16 +3,24 @@ sidebar_position: 2
 ---
 
 # How It Works
+Mimisbrunnr starts with 0 total supply. Total Supply of MIMIS is increased only when full range Uniswap V3 LP of select pairs are provided to the protocol.  When a pair is provided the protocol merges the position with its own and mints an amount of MIMIS equivalent to the `liquidity` parameter found on the position for the sender. The protocol tracks the amount of liquidity per position as well as the total liquidity supplied to the protocol from all pairs
+
+A user with MIMIS can than unwrap the tokens. The protocol than goes through each position connected to the pool and decreases its liquidity by 
 
 
 
-If one chooses to offer liquidity in the full range on uniswap v3, the algorithm is identical to constant products in uniswap v2, that is to say
-$ L = x y $
-Tokens in Mimisbrunnr map 1:1 with the liquidity paramater in a Uniswap V3 Pool and only accepts unconcentrated liquidity positions.  Since Mimisbrunnr only accepts WETH denominated pairs, one is ensured the market rate of each token is accepted. Lesser value tokens will undoubtedly create a larger Magnitude of L.  However, since the protocol tracks the weighted average of a liquidity provided by each pool, more of these tokens will be provided back to the user if they choose to unwrap mims.
-
-$$ liquidity Returned = amount * \frac{pool_i}{\sum_{i=0}^{i=#pools}}
 $$
+\Delta Liquidity_i = amount * \frac{pool_i}{\sum_{i=0}^{i=\#pools}pool_i}
+$$
+Since each MIMIS maps 1:1 with liquidity  amount is a liquidity.  The protocol than runs `collect` on its position and sends the released tokens to the user.  Any fees that were earned by the Mimisbrunnr position are collected by the protocol to be issued to stakers of MIMIS/WETH in an UniswapV3 Staker protocol.
 
+Mimisbrunnr runs a perpetual UniswapV3Staker on MIMIS/WETH to incentivize in range liquidity provision with the proceeds of the LP rewards it earns. a `protocol fee` is charged as a percentage of lp rewards that goes to the protcol to fund development and pay for infrastructure
+
+
+
+## Why it should work
+
+  In order for total supply to be increased, it must be be supplied with full range Uniswap V3 LP from valid pairs. In our case Desci / WETH pairs.  Full range must be provided to ensure fungibility of LP, since all pools are based in WETH, the liquidity points earned by each pool will be more or less economically equivalent.
 
 
 ## Supported Tokens
