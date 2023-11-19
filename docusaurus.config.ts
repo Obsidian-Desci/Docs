@@ -30,8 +30,9 @@ const config: Config = {
     [
       'classic',
       {
-        googleTagManager: {
-          containerId: 'G-B19DKHZ2CD'
+        gtag: {
+          trackingID: 'G-B19DKHZ2CD',
+          anonymizeIP: true,
         },
         docs: {
           sidebarPath: './sidebars.ts',
