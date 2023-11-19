@@ -3,6 +3,10 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex';
+import ReactGA from 'react-ga4'
+ReactGA.initialize([{
+  trackingId: 'G-B19DKHZ2CD',
+}])
 const config: Config = {
 
   title: 'Obsidian Desci',
