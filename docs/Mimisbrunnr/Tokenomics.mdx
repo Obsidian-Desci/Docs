@@ -10,6 +10,8 @@ Mimisbrunnr starts with 0 total supply. Total Supply of MIMIS is increased only 
 ## Where are my Liquidity Rewards going? - The Stake
 The liquidity rewards are now being sent to a specially modified [UniswapV3Staker](https://docs.uniswap.org/contracts/v3/reference/periphery/staker/Design).  Users that take their MIMIS and create MIMIS/WETH UniswapV3 LP can stake it here and, if the position is in range, begin earning a portion of these rewards.  
 
+A user earns a claim on the current proportion of the reward pool rewards.  The proportion is calculated by the MIMIS/Weth inrange liquidity accumulated since staking against the total liquidity accumulated by the staker. Staker v1 just provides a proportion of the total supply given to the staker from mimisbrunnr. 
+
 ## The Unwrap
 A user with MIMIS can than unwrap the tokens. The protocol than goes through each position connected to the pool and decreases its liquidity that position by 
 
